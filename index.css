@@ -82,7 +82,7 @@ main{
     font-family: "Lugrasimo", cursive;
     border-radius: 5px;
     margin: 5px 0;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .selected-items button:hover{
     background-color: green;
@@ -96,5 +96,21 @@ main{
     justify-content: center;
     position: relative;
     top: 80px;
+}
+
+.single-item{
+    background-color: blue;
+}
+
+.single-item img{
+    width: 80px;
+}
+
+.item-description{
+    background-color: aqua;
+}
+
+.add-btn{
+    background-color: aquamarine;
 }
 
