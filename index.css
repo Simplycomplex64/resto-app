@@ -24,7 +24,6 @@ main{
     background-size: cover;
     width: 100%;
     height: 13.5%;
-    position: absolute;
     top: 0px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -43,12 +42,59 @@ main{
     width: 100%;
     background-color: rgb(5, 108, 12);
     position: relative;
-    top: 125px;
+    top: 10px;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     font-family: "Lugrasimo", cursive;
-    padding: 4px 0 0 0;
+    padding: 4px 0 ;
 }
+
+.menu-item-area{
+    background-color:aliceblue;
+    height: 340px;
+    margin: 15px 5px 5px 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.label-item-selected{
+    text-align: center;
+    font-family: "Lugrasimo", cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.selected-items{
+    background-color: cadetblue;
+    height: 200px;
+    margin: 0 5px 5px 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.selected-items button{
+    font-size: 23px;
+    font-family: "Lugrasimo", cursive;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: 0.3s ease-in-out;
+}
+.selected-items button:hover{
+    background-color: green;
+    transform: scale(1.1);
+    color: white;
+    border-color: white;
+}
+
+.checkout-btn-div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+}
+
