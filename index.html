@@ -21,88 +21,40 @@
 
         <section class="menu-item-area">
             <div class="container">
-                <div class="single-item">
-                    <img src="/images/pizza.png" alt="a slice of pizza">
-                </div>
-                <div class="item-description">
-                    <h2>Pizza</h2>
-                    <p>Peperoni, mushrooms, mozarella</p>
-                    <p>$14</p>
-                </div>
-                <div class="add-btn">
-                    <img src="/images/JJJ’s (5).png" alt="add button">
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="single-item">
-                    <img src="/images/burger.png" alt="a slice of pizza">
-                </div>
-                <div class="item-description">
-                    <h2>Burger</h2>
-                    <p>Beef, Cheese, lettuce</p>
-                    <p>$12</p>
-                </div>
-                <div class="add-btn">
-                    <img src="/images/JJJ’s (5).png" alt="add button">
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="single-item">
-                    <img src="/images/beer.png" alt="a slice of pizza">
-                </div>
-                <div class="item-description">
-                    <h2>Beer</h2>
-                    <p>Grain, hops, yeast, water</p>
-                    <p>$12</p>
-                </div>
-                <div class="add-btn">
-                    <img src="/images/JJJ’s (5).png" alt="add button">
-                </div>
+               
             </div>
         </section>
 
-        <h2 class="label-item-selected">Your order</h2>
+        <div class="modal2">
+            <h2>Thanks James! Your order is on it's way!</h2>
+        </div>
+
+        <div class="your-order">
+            <h2 class="label-item-selected">Your order</h2>
 
         <section class="selected-items">
             <div class="order-container">
-                <div class="order-details">
-                    <h2>Pizza</h2>
-                    <span>remove</span>
-                    <p>$14</p>
-                </div>
-    
-                <div class="order-details">
-                    <h2>Beer</h2>
-                    <span>remove</span>
-                    <p>$12</p>
-                </div>
-    
-                <div class="order-details">
-                    <h2>Burger</h2>
-                    <span>remove</span>
-                    <p>$10</p>
-                </div>
-    
-                <div class="order-details">
-                    <h2>Burger</h2>
-                    <span>remove</span>
-                    <p>$10</p>
-                </div>
-    
-                <div class="order-details">
-                    <h2>Burger</h2>
-                    <span>remove</span>
-                    <p>$10</p>
-                </div> 
+                
             </div>
-             
-            <div class="checkout-btn-div">
-                <button>Checkout</button>
+            <div class="total-price">
+                <h3>Total price :</h3>
             </div>
         </section>
-    
+        <div class="checkout-btn-div">
+            <button>Complete order</button>
+        </div>
     </main>
-</body>   
+        </div>
+        
+    <div class="modal">
+        <h3>Enter card details</h3>
+        <div class="info-inputs">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter card number" required>
+            <input type="text" placeholder="Enter CVV" required>
+        </div>
+        <button class="pay-now">Pay</button>
+    </div>
+</body>  
+<script src="index.js"></script> 
 </html>
