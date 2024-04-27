@@ -73,7 +73,7 @@ main{
     width: 90%;
     justify-content:space-around;
     border-bottom: 2px solid lightgray;
-    padding-bottom: 15px;
+    margin: 10px 0;
 }
 
 .label-item-selected{
@@ -126,9 +126,25 @@ main{
 
 .item-description{
     padding: 0 3px;
-    margin-bottom: 5px;
-    font-size: 12px;
+    margin-left: 10px;
+    font-size: 13.5px;
     width: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.item-description h2{
+    margin: 0;
+    font-size: 17px;
+}
+
+.item-description p{
+    margin-bottom: 5px;
+}
+
+.price{
+    font-weight: bold;
 }
 
 .add-btn{
@@ -153,7 +169,13 @@ main{
     padding: 0;
 }
 
-.order-details h2, p{
+.order-details h3{
+    font-family: "Lugrasimo", cursive;
+    font-size: 13px;
+    width: 100%;
+    }
+
+.order-details h3, p{
 margin-top: 0;
 margin-bottom: 0;
 }
@@ -171,16 +193,34 @@ margin-bottom: 0;
     text-decoration: underline;
 }
 
-.order-container{
+.order-container {
     height: 100px;
     overflow-y: auto;
-    padding: 4px;
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid black;
+    position: relative;
 }
 
 .order-container::-webkit-scrollbar {
     width: 0;
 }
+
+/* CSS for scroll indicators */
+.scroll-indicator {
+    position: fixed;
+    width: 100px;
+    height: 17px;
+    padding: 3px 17px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+.scroll-indicator.down {
+    bottom: 112px;
+    left: 110px;
+}
+
 
 .total-price{
     display: flex;
@@ -220,11 +260,13 @@ padding: 5px 10px;
 
 .pay-now{
     font-size: 20px;
+    width: 120px;
     font-family: "Lugrasimo", cursive;
     border-radius: 5px;
     margin-top: 5px;
     transition: 0.2s ease-in-out;
     padding: 5px 15px;
+    margin-right: 5px;
 }
 
 .pay-now:hover{
@@ -235,15 +277,11 @@ padding: 5px 10px;
     cursor: pointer;
 }
 
-.your-order{
-    display: none;
-}
-
 .modal2{
     display: none;
     border: 2px solid;
     text-align: center;
-    font-size: 7px;
+    font-size: 15px;
     font-family: "Lugrasimo", cursive;
     background-color: rgba(36, 194, 57, 0.644);
     border-radius: 5px;
@@ -251,6 +289,11 @@ padding: 5px 10px;
     margin: 10px 30px;
 }
 
-.modal2 h2{
-    text-shadow: 0 0 10px;
+.your-order{
+    display: none;
+}
+
+.thanks
+{
+    font-weight: bold;
 }

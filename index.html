@@ -19,28 +19,29 @@
 
         <div class="separator">MENU</div>
 
-        <section class="menu-item-area">
-            <div class="container">
-               
-            </div>
+        <section class="menu-item-area" id="container-el">
+            
         </section>
 
-        <div class="modal2">
-            <h2>Thanks James! Your order is on it's way!</h2>
+        <div class="modal2" id="modal2">
+            
         </div>
 
         <div class="your-order">
             <h2 class="label-item-selected">Your order</h2>
 
         <section class="selected-items">
-            <div class="order-container">
+            <div class="order-container" id="order-container">
                 
             </div>
             <div class="total-price">
                 <h3>Total price :</h3>
+                <div class="price" id="price-el">
+            
+                </div>
             </div>
         </section>
-        <div class="checkout-btn-div">
+        <div class="checkout-btn-div" id="checkout-btn-div">
             <button>Complete order</button>
         </div>
     </main>
@@ -48,13 +49,16 @@
         
     <div class="modal">
         <h3>Enter card details</h3>
-        <div class="info-inputs">
-            <input type="text" placeholder="Enter your name" required>
-            <input type="text" placeholder="Enter card number" required>
-            <input type="text" placeholder="Enter CVV" required>
-        </div>
-        <button class="pay-now">Pay</button>
+        <form action="" id="form-el">
+            <div class="info-inputs">
+                <input type="text" placeholder="Enter your name" id="name-input" required>
+                <input type="text" placeholder="Enter card number" id="card-number-input" required>
+                <input type="text" placeholder="Enter CVV" id="cvv-input" required>
+            </div>
+            <button class="pay-now" id="pay-now">Pay</button>
+            <button class="pay-now" id="cancel-btn">cancel</button>
+        </form>
     </div>
 </body>  
-<script src="index.js"></script> 
+<script src="index.js"type="module"></script> 
 </html>
